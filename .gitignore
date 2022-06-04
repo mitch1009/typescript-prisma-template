@@ -1,0 +1,8 @@
+.vscode
+.VS
+.env
+.settings.json
+.config.yml
+.public
+.config
+node_modules

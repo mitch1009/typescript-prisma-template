@@ -1,0 +1,30 @@
+{
+  "name": "trypescrip-starter-template",
+  "version": "1.0.0",
+  "main": ".public/main.js",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Mitch Chanza",
+    "email": "mitch.chanza@gmail.com"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "start": "node .public/main.js",
+    "zustart": "node init.js",
+    "zut": "jest",
+    "db": "yarn prisma"
+  },
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.14.0",
+    "@types/jest": "^28.1.0",
+    "jest": "^28.1.0",
+    "prisma": "^3.14.0",
+    "ts-jest": "^28.0.4"
+  }
+}
