@@ -1,5 +1,6 @@
 import {mkdirSync,readFileSync, existsSync, writeFileSync } from 'fs';
 const app =  JSON.parse(readFileSync('package.json', 'utf8'))
+import * as random from 'randomstring'
 const exists = (file) => {
     if (!existsSync(`.config`)) {
         mkdirSync('.config')
@@ -10,5 +11,6 @@ const exists = (file) => {
         writeFileSync(`.config/${file}.json`, JSON.stringify(data), "utf-8")
     }
 }
+console.log(random.generate({length:10, charset:'numeric'}))
 exists('settings')
 
