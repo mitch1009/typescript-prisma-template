@@ -1,1 +1,1 @@
-# Typescript - Prisma - PM2  Starter Template
+# Typescript - Prisma  Starter Template
